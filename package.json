@@ -1,0 +1,23 @@
+{
+  "name": "social-media-app",
+  "version": "1.0.0",
+  "description": "social media app using html, css, js, node, express, mysql",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "social",
+    "media",
+    "app"
+  ],
+  "author": "Ruma",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.3",
+    "cors": "^2.8.5",
+    "express": "^4.21.1",
+    "mysql2": "^3.11.3",
+    "sequelize": "^6.37.4"
+  }
+}

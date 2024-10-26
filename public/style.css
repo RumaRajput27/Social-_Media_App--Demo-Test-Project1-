@@ -1,0 +1,149 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+    display: grid;
+    place-items: center; /* Center both horizontally and vertically */
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 600px;
+    width: 100%;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Center text elements */
+}
+
+h1 {
+    text-align: center;
+    color: #444;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    gap: 10px;
+}
+
+input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 200px;
+    transition: border 0.3s;
+}
+
+input[type="text"]:focus {
+    border: 1px solid #007bff;
+    outline: none;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#posts {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 15px;
+    align-items: center; /* Center each post */
+}
+
+.post {
+    width: 100%; /* Full width within container */
+    max-width: 300px; /* Adjust width of each post */
+    background-color: white;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.post img {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+}
+
+.delete-button {
+    position: absolute;
+    top: -8px;
+    right: -11px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    color: #dc3545;
+    font-size: 11px;
+    transition: color 0.3s;
+}
+
+.delete-button:hover {
+    color: #c82333;
+}
+
+.comment-list {
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 1px solid #e0e0e0;
+}
+
+.comment-form {
+    display: flex;
+    justify-content: center; /* Center comment input and button */
+    margin-top: 10px;
+    gap: 10px;
+}
+
+.comment-form input {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.comment-form button {
+    padding: 8px 12px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.comment-form button:hover {
+    background-color: #218838;
+}
+
+@media (max-width: 600px) {
+    form {
+        flex-direction: column;
+    }
+
+    input[type="text"] {
+        width: 100%;
+    }
+}
